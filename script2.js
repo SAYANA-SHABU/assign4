@@ -5,8 +5,8 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Enter elements (separate with commas): ', (answer) => {
-  const arr = answer.split(",").map(Number);
+rl.question('Enter elements (separate with space): ', (answer) => {
+  const arr = answer.split(" ").map(Number);
 function sumofsquares(arr) {
   let sum = 0;
   for (let i = 0; i < arr.length; i++) {
