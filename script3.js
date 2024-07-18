@@ -6,8 +6,8 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-rl.question('Enter elements (separate with commas): ', (answer) => {
-  const arr = answer.split(",");
+rl.question('Enter elements (separate with space): ', (answer) => {
+  const arr = answer.split(" ");
   const frequency = {};
   for(const elem of arr){
     frequency[String(elem)] = (frequency[String(elem)] || 0) + 1;
