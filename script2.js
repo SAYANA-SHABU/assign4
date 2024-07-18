@@ -15,6 +15,6 @@ function sumofsquares(arr) {
   return sum;
 }
 const result = sumofsquares(arr);
-console.log(result); 
+console.log('Sum of squares is '+result); 
 rl.close();
 });
