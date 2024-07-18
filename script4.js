@@ -17,8 +17,8 @@ function isPrime(num) {
   return true;
 }
 
-rl.question('Enter elements (separate with commas): ', (answer) => {
-  const arr = answer.split(",").map(Number);
+rl.question('Enter elements (separate with space): ', (answer) => {
+  const arr = answer.split(" ").map(Number);
   if(isPrime(arr[0])) console.log(`The first element is prime`);
   else console.log(`The first element is not prime`);
   rl.close();
